@@ -1,6 +1,6 @@
 /**
- * @overview A partial to provide a better typeof capability by returning
- *           the practically correct type in string representation of the specific object.
+ * @overview A partial to provide a **better typeof capability by returning the practically correct type**
+ *           in string representation of the specific object.
  *
  * @module js/partial/typeOf
  * @type {function}
@@ -318,7 +318,8 @@
     /**
      * Returns a copy of the current, global typeOf configuration.
      *
-     * If this returned object is changed, there will be no effect to the actual, current typeOf configuration.
+     * If this returned object is changed, there will be no effect to the actual, current typeOf configuration
+     * since the returned object is an actual copy of the configuration.
      *
      * @static
      * @function getConfig
