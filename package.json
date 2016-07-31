@@ -1,6 +1,6 @@
 {
   "name": "js-partial-type-of",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A partial to provide a better typeof capability by returning the practically correct type in string representation of the specific object.",
   "main": "dist/js-partial-type-of.js",
   "license": "MIT",
