@@ -67,11 +67,10 @@
         };
 
     /**
-     * Returns a string representation of the given object's type.
+     * Returns the practically correct type in string representation of the specific object.
      *
      * @public
      * @function typeOf
-     * @memberOf js/partial/typeOf
      *
      * @param {*}            object               The object, which type will be returned.
      *
@@ -80,12 +79,12 @@
      *                                            If this config option is null, it will be skipped and its value
      *                                            during type check will be the default, global configuration value
      *                                            for this option. To set the global configuration for this option,
-     *                                            [check setConfig](@link js/partial/typeOf.setConfig).
+     *                                            [check setConfig]{@link js/partial/typeOf.setConfig}.
      *
      * @param {boolean}      [originalCase=false] Determines whether the the returned type of the object
      *                                            should be in its original casing or should be converted to lowercase.
      *                                            To set the global configuration for this option,
-     *                                            [check setConfig](@link js/partial/typeOf.setConfig).
+     *                                            [check setConfig]{@link js/partial/typeOf.setConfig}.
      *
      * @returns {string} The string representation of the object type.
      *
@@ -334,8 +333,8 @@
      * // now, the config object will contain the following key=>value pairs:
      * console.log(config);
      * // {
-     * //     .specificType : false
-     * //     .originalCase : false
+     * //     'specificType' : false
+     * //     'originalCase' : false
      * // }
      */
     typeOf.getConfig = function() {
@@ -370,8 +369,8 @@
      * // now, the configuration of typeOf will have the following key=>value pairs with their specific values:
      * console.log(typeOf.getConfig());
      * // {
-     * //     specificType : false
-     * //     originalCase : false
+     * //     'specificType' : false
+     * //     'originalCase' : false
      * // }
      */
     typeOf.setConfig = function(configuration) {
