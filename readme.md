@@ -10,8 +10,9 @@
 
 ## Synopsis
 
-A [partial][partial-link] to provide a **better typeof capability**. Written in [UMD][umd-link].
+A [partial][partial-link] to provide a **better typeof capability**.
 This typeof partial returns **the practically correct** type in string representation of the specific object.
+Written in [UMD][umd-link].
 
 Compatible with **ECMAScript 6**.
 
@@ -21,7 +22,7 @@ Compatible with **ECMAScript 6**.
 npm install js-partial-type-of
 ```
 
-## Usage
+## Usage - Include/Initialization
 
  - AMD (e.g.: RequireJS)
  
@@ -49,6 +50,8 @@ npm install js-partial-type-of
  
  // you can now use typeOf
   ```
+ 
+ ## Usage - After Initialization
  
  - General usage
  

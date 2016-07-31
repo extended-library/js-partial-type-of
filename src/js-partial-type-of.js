@@ -52,6 +52,9 @@
          *
          * @typedef {Object} config
          *
+           @static
+         * @memberOf js/partial/typeOf
+         *
          * @property {boolean} [specificType=false] Determines whether the the returned type of the object
          *                                          should be specific or general.
          * @property {boolean} [originalCase=false] Determines whether the the returned type of the object
@@ -66,6 +69,10 @@
     /**
      * Returns a string representation of the given object's type.
      *
+     * @public
+     * @function typeOf
+     * @memberOf js/partial/typeOf
+     *
      * @param {*}            object               The object, which type will be returned.
      *
      * @param {boolean|null} [specificType=false] Determines whether the the returned type of the object
@@ -73,12 +80,12 @@
      *                                            If this config option is null, it will be skipped and its value
      *                                            during type check will be the default, global configuration value
      *                                            for this option. To set the global configuration for this option,
-     *                                            check [setConfig](@link js/partial/typeOf.setConfig).
+     *                                            [check setConfig](@link js/partial/typeOf.setConfig).
      *
      * @param {boolean}      [originalCase=false] Determines whether the the returned type of the object
      *                                            should be in its original casing or should be converted to lowercase.
      *                                            To set the global configuration for this option,
-     *                                            check [setConfig](@link js/partial/typeOf.setConfig).
+     *                                            [check setConfig](@link js/partial/typeOf.setConfig).
      *
      * @returns {string} The string representation of the object type.
      *
@@ -314,6 +321,10 @@
      *
      * If this returned object is changed, there will be no effect to the actual, current typeOf configuration.
      *
+     * @static
+     * @function getConfig
+     * @memberOf js/partial/typeOf
+     *
      * @returns {config} An object with configuration key=>value pairs.
      *
      * @example
@@ -340,6 +351,10 @@
 
     /**
      * Sets the global typeOf configuration.
+     *
+     * @static
+     * @function setConfig
+     * @memberOf js/partial/typeOf
      *
      * @param {config} configuration An object with configuration key=>value pairs.
      *
